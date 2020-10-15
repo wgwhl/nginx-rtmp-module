@@ -332,9 +332,9 @@ rtmp_auto_push directive.
     }
     
     
-### nginx.conf 文件的列子配置
-
-
+### nginx.conf 文件的列子
+  
+    
 #user  nobody;
 #worker_processes  1; #运行在Windows上时，设置为1，因为Windows不支持Unix domain socket
 worker_processes  auto; #1.3.8和1.2.5以及之后的版本
@@ -578,7 +578,6 @@ rtmp {
             hls_cleanup on;    #对多余的切片进行删除。
             hls_nested on;     #嵌套模式。
 	    gop_cache on; ##开启GOP（Group of Picture）缓存，这个是减少播放延迟的选项
-#	    pull rtmp://live.hkstv.hk.lxdns.com/live/hks; #如果懒得推流，那可以用这个，香港卫视的直播推流
 	}
 
 	#rtmp://localhost/app/movie?a=100&b=face&foo=bar then a, b & foo are also sent with callback
@@ -655,6 +654,9 @@ rtmp {
 }
 
 
+
+
+    
 
 
 
